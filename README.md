@@ -2,7 +2,7 @@
 - Business Tinker
 
 ## Live Site Link
-
+- https://business-tinker-9c511.web.app/
 
 ### components
 * Home 
@@ -14,3 +14,4 @@
 
 * DashBoard
 - added eight components and sidebar for admin page
+- made add service and review dynamic
