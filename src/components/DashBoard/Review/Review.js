@@ -17,7 +17,7 @@ const Review = () => {
       description: data.description
     };
 
-    const url = `http://localhost:5000/addReview`;
+    const url = `https://pacific-waters-24451.herokuapp.com/addReview`;
 
     fetch(url, {
       method: "POST",

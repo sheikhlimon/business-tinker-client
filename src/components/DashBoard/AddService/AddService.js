@@ -21,7 +21,7 @@ const AddService = () => {
       imageURL: imageURL,
     };
 
-    const url = `http://localhost:5000/addService`;
+    const url = `https://pacific-waters-24451.herokuapp.com/addService`;
 
     fetch(url, {
       method: "POST",
