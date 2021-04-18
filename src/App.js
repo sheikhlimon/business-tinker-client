@@ -24,16 +24,16 @@ function App() {
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
       <Router>
         <Switch>
-        <Route path="/manageservices">
+          <Route path="/manageservices">
             <ManageServices></ManageServices>
           </Route>
           <Route path="/makeadmin">
             <MakeAdmin></MakeAdmin>
           </Route>
-        <Route path="/book/:id">
+          <Route path="/book/:id">
             <Book></Book>
           </Route>
-          <Route path="/bookinglist">
+          <Route path="/booking">
             <BookingList></BookingList>
           </Route>
           <Route path="/addreview">

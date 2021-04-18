@@ -30,13 +30,8 @@ const Sidebar = () => {
     >
       <ul className="list-unstyled">
         <li>
-          <Link to="/book/:id" className="text-white">
+          <Link to="/booking" className="text-white">
             <FontAwesomeIcon icon={faServicestack} /> <span>Book</span>
-          </Link>
-        </li>
-        <li>
-          <Link to="/bookinglist" className="text-white">
-            <FontAwesomeIcon icon={faServicestack} /> <span>Booking List</span>
           </Link>
         </li>
         <li>
