@@ -1,7 +1,7 @@
 import React from "react";
 import Sidebar from "../Sidebar/Sidebar";
 
-const BookingList = () => {
+const ManageServices = () => {
   return (
     <section className="container-fluid row">
       <Sidebar></Sidebar>
@@ -13,4 +13,4 @@ const BookingList = () => {
   );
 };
 
-export default BookingList;
+export default ManageServices;

@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import Sidebar from "../Sidebar/Sidebar";
+import { UserContext } from "../../../App";
 
 const AddService = () => {
   const {
@@ -11,6 +12,8 @@ const AddService = () => {
     formState: { errors },
   } = useForm();
 
+  const [loggedInUser, setLoggedInUser] = useContext(UserContext)
+
   const [imageURL, setImageURL] = useState(null);
 
   const onSubmit = (data) => {
@@ -19,6 +22,7 @@ const AddService = () => {
       description: data.description,
       cost: data.cost,
       imageURL: imageURL,
+      ...loggedInUser
     };
 
     const url = `https://pacific-waters-24451.herokuapp.com/addService`;

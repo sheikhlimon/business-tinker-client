@@ -13,6 +13,8 @@ import AddService from "./components/DashBoard/AddService/AddService";
 import Book from "./components/DashBoard/Book/Book";
 import BookingList from "./components/DashBoard/BookingList/BookingList";
 import Review from "./components/DashBoard/Review/Review";
+import ManageServices from "./components/DashBoard/ManageServices/ManageServices";
+import MakeAdmin from "./components/DashBoard/MakeAdmin/MakeAdmin";
 
 export const UserContext = createContext();
 
@@ -22,7 +24,13 @@ function App() {
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
       <Router>
         <Switch>
-        <Route path="/book">
+        <Route path="/manageservices">
+            <ManageServices></ManageServices>
+          </Route>
+          <Route path="/makeadmin">
+            <MakeAdmin></MakeAdmin>
+          </Route>
+        <Route path="/book/:id">
             <Book></Book>
           </Route>
           <Route path="/bookinglist">

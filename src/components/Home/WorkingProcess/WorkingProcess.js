@@ -4,7 +4,7 @@ import workingprocess from "../../../images/working-process.png";
 const WorkingProcess = () => {
   return (
     <section
-      style={{ height: "600px" }}
+      style={{ height: "800px" }}
       className="row d-flex align-items-center mt-5 pt-5"
     >
       <div className="col-md-6 col-sm-6 col-12 ms-3">
